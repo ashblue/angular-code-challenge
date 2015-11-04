@@ -9,7 +9,7 @@
 angular.module('interviewApp')
   .directive('city', function () {
     return {
-      templateUrl: 'directives/city.html',
+      templateUrl: 'views/directives/city.html',
       restrict: 'E',
       replace: true
     };

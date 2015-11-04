@@ -9,7 +9,7 @@
 angular.module('interviewApp')
   .directive('navItem', function ($location) {
     return {
-      templateUrl: 'directives/nav-item.html',
+      templateUrl: 'views/directives/nav-item.html',
       replace: true,
       restrict: 'E',
       scope: {},

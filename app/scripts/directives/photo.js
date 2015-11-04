@@ -9,7 +9,7 @@
 angular.module('interviewApp')
   .directive('photo', function () {
     return {
-      templateUrl: 'directives/photo.html',
+      templateUrl: 'views/directives/photo.html',
       restrict: 'E',
       replace: true
     };
