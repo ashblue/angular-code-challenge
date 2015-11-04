@@ -7,6 +7,10 @@ version 0.14.0.
 
 Run `grunt build` for building and `grunt serve` for preview.
 
+## Push to GitHub pages
+
+`git subtree push --prefix dist origin gh-pages`
+
 ## Instructions
 
 Hello!
