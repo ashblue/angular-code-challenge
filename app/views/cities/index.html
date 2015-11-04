@@ -1,6 +1,6 @@
 <h1>Available Cities</h1>
 
-<div class="row" ng-repeat="cityGroup in cities | orderBy:'published' | chunkBy:3">
+<div class="row" ng-repeat="cityGroup in cities | orderBy:'name' | chunkBy:3">
     <div class="col-sm-4" ng-repeat="city in cityGroup">
         <city></city>
     </div>
