@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name interviewApp.controller:AboutCtrl
+ * @name interviewApp.controller:ContactCtrl
  * @description
- * # AboutCtrl
+ * # ContactCtrl
  * Controller of the interviewApp
  */
 angular.module('interviewApp')
-  .controller('AboutCtrl', function () {
+  .controller('ContactCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

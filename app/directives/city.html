@@ -1,0 +1,12 @@
+<article class="city-card card">
+    <a class="card-link">
+        <header class="card-title">
+            <h2>{{city.description | replace:city.id:""}}</h2>
+        </header>
+
+        <p class="card-meta">
+            <span class="label label-primary">Photos: {{city.slides}}</span>
+            <span class="label label-default">Published: {{city.published | date:'short'}}</span>
+        </p>
+    </a>
+</article>
