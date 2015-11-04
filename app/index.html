@@ -41,8 +41,8 @@
                 <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#/">Cities</a></li>
-                        <li><a ng-href="#/contact">Contact</a></li>
+                        <nav-item data-name="Cities" data-url="#/cities" data-root="true"></nav-item>
+                        <nav-item data-name="Contact" data-url="#/contact"></nav-item>
                     </ul>
                 </div>
             </div>
@@ -93,11 +93,12 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/services/city.js"></script>
 <script src="scripts/controllers/cities/index.js"></script>
-<script src="scripts/directives/city.js"></script>
 <script src="scripts/filters/replace.js"></script>
 <script src="scripts/controllers/contact.js"></script>
 <script src="scripts/controllers/cities/show.js"></script>
 <script src="scripts/directives/photo.js"></script>
+<script src="scripts/directives/nav-item.js"></script>
+<script src="scripts/directives/city.js"></script>
 <!-- endbuild -->
 </body>
 </html>
