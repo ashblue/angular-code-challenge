@@ -10,7 +10,8 @@
 angular.module('interviewApp')
   .factory('City', function ($resource) {
     // You could use an $http.get() request here, but resources is much more efficient
-    // and only requires roughly 1 line of code
+    // and only requires roughly 1 line of code. Formatted nicely for version control
+    // friendliness.
     return $resource('http://mqlocal.aol.com/photos/:cityId', {
       cityId: '@id'
     });

@@ -10,7 +10,14 @@
  */
 angular.module('interviewApp')
   .filter('replace', function () {
-    return function (input, val1, val2) {
-      return input.replace(val1, val2).trim();
+    /**
+     * Find and replace a string via filter
+     * @arg {string} text Text we want to edit
+     * @arg {string} find String we want to find
+     * @arg {string} replace What to replace the discovered string with
+     * @returns The original string with replaced content. Trimmed for white-space edge cases.
+     */
+    return function (text, find, replace) {
+      return text.replace(find, replace).trim();
     };
   });
