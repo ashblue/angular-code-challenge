@@ -10,12 +10,8 @@
  */
 angular
   .module('interviewApp', [
-    'ngAnimate',
-    'ngCookies',
     'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch',
     'angular.filter'
   ])
   .config(function ($routeProvider) {
