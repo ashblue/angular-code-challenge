@@ -16,5 +16,7 @@ angular.module('interviewApp')
       }
 
       $scope.cities = cities;
+    }, function () {
+      $scope.error = 'Failed to retrieve data from AOL server.';
     });
   });

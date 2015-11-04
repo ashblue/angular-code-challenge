@@ -18,6 +18,10 @@ angular.module('interviewApp')
      * @returns The original string with replaced content. Trimmed for white-space edge cases.
      */
     return function (text, find, replace) {
-      return text.replace(find, replace).trim();
+      if (text !== undefined) {
+        return text.replace(find, replace).trim();
+      } else {
+        return '';
+      }
     };
   });

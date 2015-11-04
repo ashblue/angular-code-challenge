@@ -11,5 +11,7 @@ angular.module('interviewApp')
   .controller('CitiesShowCtrl', function ($scope, $routeParams, City) {
     var city = City.get({cityId: $routeParams.cityId}, function () {
       $scope.city = city;
+    }, function () {
+      $scope.error = 'Failed to load city off of AOL server'
     });
   });
