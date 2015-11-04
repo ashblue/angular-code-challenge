@@ -25,10 +25,20 @@ angular
         controller: 'CitiesIndexCtrl',
         controllerAs: 'cities'
       })
+      .when('/cities', {
+        templateUrl: 'views/cities/index.html',
+        controller: 'CitiesIndexCtrl',
+        controllerAs: 'cities'
+      })
       .when('/contact', {
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl',
         controllerAs: 'contact'
+      })
+      .when('/cities/:cityId', {
+        templateUrl: 'views/cities/show.html',
+        controller: 'CitiesShowCtrl',
+        controllerAs: 'cities/show'
       })
       .otherwise({
         redirectTo: '/'

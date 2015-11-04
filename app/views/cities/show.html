@@ -1,0 +1,21 @@
+<article ng-if="city !== undefined">
+    <header>
+        <h1>{{city.record_title | replace:city.mqid:""}}</h1>
+    </header>
+
+    <p>Click a thumbnail to view the full size image.</p>
+
+    <div class="row" ng-repeat="photoGroup in city.photos | chunkBy:3">
+        <div class="col-sm-4" ng-repeat="photo in photoGroup">
+            <div class="thumbnail">
+                <a href="{{photo.url}}" data-lightbox="1" data-title="{{photo.caption}}">
+                    <img ng-src="{{photo.thumb}}" />
+                </a>
+                <div class="caption">
+                    <p>{{photo.caption}}</p>
+                    <p><span class="label label-info">{{photo.credits}}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
