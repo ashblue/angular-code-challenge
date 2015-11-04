@@ -8,15 +8,7 @@
 
     <div class="row" ng-repeat="photoGroup in city.photos | chunkBy:3">
         <div class="col-sm-4" ng-repeat="photo in photoGroup">
-            <div class="thumbnail">
-                <a href="{{photo.url}}" target="_blank">
-                    <img ng-src="{{photo.thumb}}" />
-                </a>
-                <div class="caption">
-                    <p>{{photo.caption}}</p>
-                    <p><span class="label label-info">{{photo.credits}}</span></p>
-                </div>
-            </div>
+            <photo></photo>
         </div>
     </div>
 </article>
