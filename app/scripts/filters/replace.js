@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc filter
- * @name interviewApp.filter:removeString
+ * @name interviewApp.filter:replace
  * @function
  * @description
- * # removeString
+ * # Removes a string and replaces it with a new value
  * Filter in the interviewApp.
  */
 angular.module('interviewApp')
